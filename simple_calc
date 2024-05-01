@@ -1,0 +1,35 @@
+      //develop simple calculator using switch statement
+
+#include<iostream>
+using namespace std;
+int main(){
+    int num1,num2;
+    char option;
+    cout<<"enter the two number:"<<endl;
+    cin>>num1>>num2;
+    cout<<"enter the options(+,-,*,/):";
+    cin>>option;
+    switch(option){
+        case '+':    //add 2 numbers
+        cout<<num1 + num2<<endl;
+        break;
+
+        case '-':    // substract 2 numbers
+        cout<<num1-num2<<endl;
+        break;
+
+        case '*':    //multiply 2 numbers
+        cout<<num1*num2<<endl;
+        break;
+
+        case '/':    //divide 2 numbers
+        cout<<num1/num2<<endl;
+        break;
+
+        default:
+        cout<< "your option is wrong.please try again!";
+        break; 
+    }
+    cout<<"thank you";
+    return 0;
+}
